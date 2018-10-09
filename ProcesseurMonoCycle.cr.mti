@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
@@ -9,12 +8,6 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling architecture bench of mux2tb
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
-=======
-<<<<<<< HEAD
-
-=======
-C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
->>>>>>> 6cba65b7d1924611884af684033f09f0ae36061f
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
@@ -26,9 +19,21 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
 -- Loading package numeric_std
 -- Compiling entity alu
 -- Compiling architecture comportemental of alu
+
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU_tb.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Compiling entity banc_alu_tb
+-- Compiling architecture bench of banc_alu_tb
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/ALU_TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/ALU_TB.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -38,6 +43,17 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package std_logic_unsigned
 -- Compiling entity alu_tb
 -- Compiling architecture bench of alu_tb
+
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Compiling entity eds
+-- Compiling architecture comportemental of alu
+-- Loading entity alu
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -49,6 +65,16 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling entity bancregistres16_32
 -- Compiling architecture comportemental of bancregistres16_32
 
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS_TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS_TB.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Compiling entity eds_tb
+-- Compiling architecture bench of eds_tb
+
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32_tb.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
@@ -59,5 +85,12 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling entity bancregistres16_32_tb
 -- Compiling architecture bench of bancregistres16_32_tb
 
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity banc_alu
+-- Compiling architecture structurel of banc_alu
+
 } {} {}}
->>>>>>> 6bac4447f597f8054e9ac002c72afb99f6f79795
