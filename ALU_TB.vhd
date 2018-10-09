@@ -23,7 +23,7 @@ architecture BENCH of ALU_TB is
 begin
   
   UUT: COMPONENT ALU PORT MAP(
-		  OP => TOP,
+	  OP => TOP,
       A => TA,
       B => TB,
       S => TS,

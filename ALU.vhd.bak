@@ -9,12 +9,12 @@ ENTITY ALU IS
 		OP :  IN  std_logic_vector (1 downto 0);
 		A, B :  IN  std_logic_vector (31 downto 0);
 		S :  OUT  std_logic_vector (31 downto 0);
-		N : OUT std_logic
+		N,C,Z,V : OUT std_logic
 	);
 END ALU;
 
 ARCHITECTURE Comportemental of ALU is
-  signal result: unsigned (31 downto 0) := (others => '0');
+  signal result: unsigned (31 downto 0);
   begin
     --Resultat    
     S <= std_logic_vector(result);
@@ -27,12 +27,20 @@ ARCHITECTURE Comportemental of ALU is
         
         if OP = "00" then
           result <= unsigned(A) + unsigned(B);
-     
+          --Carry
+      		  if A(31) = '1' and B(31) = '0' and result(31) = '0' then
+       			  C < = '1';
+      		  end if;
+          
         elsif OP = "01" then
           result <= unsigned(B);
           
         elsif OP = "10" then
           result <= unsigned(A) - unsigned(B);
+          --Carry          
+          if A(31) = '0' and B(31) = '0' and result(31) = '1' then
+			     C <= '1';
+		      end if;
 		      
         elsif OP = "11" then
           result <= unsigned(A);

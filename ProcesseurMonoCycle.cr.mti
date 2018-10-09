@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
@@ -8,6 +9,12 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling architecture bench of mux2tb
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
+=======
+<<<<<<< HEAD
+
+=======
+C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
+>>>>>>> 6cba65b7d1924611884af684033f09f0ae36061f
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
@@ -53,3 +60,4 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling architecture bench of bancregistres16_32_tb
 
 } {} {}}
+>>>>>>> 6bac4447f597f8054e9ac002c72afb99f6f79795
