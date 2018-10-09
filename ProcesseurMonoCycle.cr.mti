@@ -1,4 +1,13 @@
-C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
+C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/mux2TB.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity mux2tb
+-- Compiling architecture bench of mux2tb
+
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/multiplexeur2.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
