@@ -3,9 +3,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-use ieee.STD_LOGIC_unsigned.all;
 use ieee.numeric_std.all;
-use ieee.STD_LOGIC_ARITH.all;
 
 entity DataMemory_tb is
  port( Done: out boolean:=FALSE);
@@ -67,7 +65,6 @@ begin
       TADDR <= conv_std_logic_vector(i, TADDR'length);
       TDataIn <= conv_std_logic_vector(i, TDataIn'length);
       wait until TClk = '1';
-      wait until TClk = '0';
       ASSERT TDataOut = conv_std_logic_vector(i, TDataIn'length) REPORT "write/read failed"  -- Initialization test.
       SEVERITY FAILURE; 
       

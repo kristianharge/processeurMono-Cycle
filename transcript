@@ -1,0 +1,137 @@
+# Loading project ProcesseurMonoCycle
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+# Compile of DataMemory.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ProcessingUnit.vhd failed with 1 errors.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# 8 compiles, 1 failed with 1 error. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/datamemory_tb/UUT/Banc
+restart
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+# ** Note: Write/Read Test passed.
+#    Time: 6400 ns  Iteration: 0  Instance: /datamemory_tb
+quit -sim
+dataset reload -f
+# wrong number of args for "dataset info".
+# Usage: dataset info <option> <dataset_name>
+# Compile of ProcessingUnit.vhd failed with 1 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 3 errors.
+# Compile of ProcessingUnit.vhd failed with 3 errors.
+# Compile of ProcessingUnit.vhd failed with 3 errors.
+# Compile of ProcessingUnit.vhd failed with 3 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of EDS.vhd was successful.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd failed with 1 errors.
+# Compile of ProcessingUnit.vhd failed with 1 errors.
+# Compile of ProcessingUnit.vhd failed with 1 errors.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of ProcessingUnit.vhd failed with 2 errors.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of DataMemory.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# 8 compiles, 0 failed with no errors. 
+dataset reload -f
+# wrong number of args for "dataset info".
+# Usage: dataset info <option> <dataset_name>

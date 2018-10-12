@@ -137,9 +137,9 @@ begin
   C4: COMPONENT DataMemory PORT MAP(
 		Clk	=> Clk,
 		Reset		=> Reset,
-	  DataIn => B,
+	  DataIn => ALU_out(5 downto 0),
 		DataOut => DataOut,
-		Addr => ALU_out(5 downto 0),
+		Addr => Addr,
     WrEn => WrEn_DM);
     
   C5:component Mux2

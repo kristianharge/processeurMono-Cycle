@@ -40,6 +40,7 @@ begin
         end if;
       end if;
     end if;
+    
   end process;
   DataOut <= Banc(to_integer(Unsigned(Addr)));
 end Behavioral;
