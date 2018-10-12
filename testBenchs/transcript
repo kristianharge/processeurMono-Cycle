@@ -1,0 +1,14 @@
+# Project file /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/ProcesseurMonoCycle.mpf was not found.
+# Unable to open project.
+# Loading project ProcesseurMonoCycle
+# Compile of ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of BancRegistres_ALU.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ALU_TB.vhd was successful.
+# Compile of BancRegistre16_32_tb.vhd was successful.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# Compile of EDS_TB.vhd was successful.
+# Compile of mux2TB.vhd was successful.
+# 10 compiles, 0 failed with no errors. 
