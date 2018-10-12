@@ -202,3 +202,17 @@ add wave -position end  sim:/eds_tb/TS
 add wave -position end  sim:/eds_tb/TN
 run -all
 quit -sim
+# Compile of EDS.vhd was successful.
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+quit -sim

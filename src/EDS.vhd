@@ -15,12 +15,15 @@ END EDS;
 ARCHITECTURE Comportemental of EDS is
   begin
     
-    process (A)
-      begin
-        S <= std_logic_vector(resize(unsigned(A),S'length));
-        for I in N to 31 loop
-          S(I) <= A(N-1);
-        end loop;
-      end process;
+    S (N-1 downto 0) <= A;
+    S (31 downto N) <= ( others => A(N-1) );
+    
+    --process (A)
+      --begin
+        --S <= std_logic_vector(resize(unsigned(A),S'length));
+        --for I in N to 31 loop
+          --S(I) <= A(N-1);
+        --end loop;
+      --end process;
         
 end Comportemental;

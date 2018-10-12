@@ -13,19 +13,14 @@ ENTITY EDS IS
 END EDS;
 
 ARCHITECTURE Comportemental of EDS is
-  
-  signal extension: std_logic_vector (31-N+1 downto 0);
   begin
     
-    S <= '1' & A;
-    
-    process (A)
-      begin
-        if A(N-1) = '1' then
-          extension <= ( others => '1');
-        else
-          extension <= ( others => '0');
-        end if;
-      end process;
+    --process (A)
+      --begin
+        --S <= std_logic_vector(resize(unsigned(A),S'length));
+        --for I in N to 31 loop
+          --S(I) <= A(N-1);
+        --end loop;
+      --end process;
         
 end Comportemental;
