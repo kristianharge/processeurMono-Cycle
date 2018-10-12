@@ -38,11 +38,18 @@ begin
         wait for 1 ns;
         TA <= "0000000000000001";
         wait for 1 ns;
+        ASSERT integer(TS) /= integer(TA)REPORT "ERROR: EDS TEST 1 FAILED)" -- EDS Test 1
+        SEVERITY FAILURE; 
+        REPORT "EDS Test 1 passed." SEVERITY note;
 
         wait for 1 ns;
         TA <= "1111111111111001";
         wait for 1 ns;
+        ASSERT integer(TS) /= integer(TA)REPORT "ERROR: EDS TEST 1 FAILED)" -- EDS Test 1
+        SEVERITY FAILURE; 
+        REPORT "EDS Test 1 passed." SEVERITY note;
 
+        REPORT "Bench test is successfully finished." SEVERITY note;
         OK <= TRUE; -- La fin du banc de teste. Le résultat est bon.
         WAIT; -- Boucle infinie
   end process;

@@ -12,3 +12,193 @@
 # Compile of EDS_TB.vhd was successful.
 # Compile of mux2TB.vhd was successful.
 # 10 compiles, 0 failed with no errors. 
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# ** Error: (vsim-3173) Entity '/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/work.eds' has no architecture.
+# Load interrupted
+# Error loading design
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# ** Error: (vsim-3173) Entity '/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/work.eds' has no architecture.
+# Load interrupted
+# Error loading design
+vsim work.alu_tb(bench)
+# vsim work.alu_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu_tb(bench)
+# Loading ieee.numeric_std(body)
+# Loading work.alu(comportemental)
+# ** Warning: (vsim-8683) Uninitialized out port /alu_tb/UUT/N has no driver.
+# This port will contribute value (U) to the signal network.
+quit -sim
+# Load canceled
+# Compile of EDS.vhd was successful.
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+# ** Failure: ERROR: EDS TEST 1 FAILED)
+#    Time: 2 ns  Iteration: 0  Process: /eds_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/EDS_TB.vhd
+# Break in Process stimulus at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/EDS_TB.vhd line 42
+quit -sim
+# Compile of ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of BancRegistres_ALU.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ALU_TB.vhd was successful.
+# Compile of BancRegistre16_32_tb.vhd was successful.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# Compile of EDS_TB.vhd failed with 1 errors.
+# Compile of mux2TB.vhd was successful.
+# 10 compiles, 1 failed with 1 error. 
+# Compile of ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of BancRegistres_ALU.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ALU_TB.vhd was successful.
+# Compile of BancRegistre16_32_tb.vhd was successful.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# Compile of EDS_TB.vhd failed with 1 errors.
+# Compile of mux2TB.vhd was successful.
+# 10 compiles, 1 failed with 1 error. 
+# Compile of EDS_TB.vhd was successful.
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+quit -sim
+# Compile of EDS.vhd was successful.
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 32 (31 downto 0). Right is 33 (0 to 32).
+#    Time: 0 ps  Iteration: 0  Process: /eds_tb/UUT/line__20 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd
+# Fatal error in Architecture Comportemental at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd line 20
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd 20 Architecture Comportemental
+# 
+quit -sim
+# Compile of EDS_TB.vhd was successful.
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 32 (31 downto 0). Right is 33 (0 to 32).
+#    Time: 0 ps  Iteration: 0  Process: /eds_tb/UUT/line__20 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd
+# Fatal error in Architecture Comportemental at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd line 20
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd 20 Architecture Comportemental
+# 
+quit -sim
+# Compile of ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of BancRegistres_ALU.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ALU_TB.vhd was successful.
+# Compile of BancRegistre16_32_tb.vhd was successful.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# Compile of EDS_TB.vhd was successful.
+# Compile of mux2TB.vhd was successful.
+# 10 compiles, 0 failed with no errors. 
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 32 (31 downto 0). Right is 17 (0 to 16).
+#    Time: 0 ps  Iteration: 0  Process: /eds_tb/UUT/line__20 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd
+# Fatal error in Architecture Comportemental at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd line 20
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd 20 Architecture Comportemental
+# 
+quit -sim
+# Compile of ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of BancRegistres_ALU.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of ALU_TB.vhd was successful.
+# Compile of BancRegistre16_32_tb.vhd was successful.
+# Compile of BancRegistres_ALU_tb.vhd was successful.
+# Compile of EDS_TB.vhd was successful.
+# Compile of mux2TB.vhd was successful.
+# 10 compiles, 0 failed with no errors. 
+vsim work.eds_tb(bench)
+# vsim work.eds_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.eds_tb(bench)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/eds_tb/TA
+add wave -position end  sim:/eds_tb/TS
+add wave -position end  sim:/eds_tb/TN
+run -all
+quit -sim

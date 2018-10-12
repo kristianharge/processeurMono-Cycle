@@ -1,5 +1,6 @@
 LIBRARY ieee;
 use ieee.STD_LOGIC_1164.all;
+use ieee.STD_LOGIC_unsigned.all;
 use ieee.numeric_std.all;
 
 ENTITY ALU IS 
@@ -13,7 +14,7 @@ ENTITY ALU IS
 END ALU;
 
 ARCHITECTURE Comportemental of ALU is
-  signal result: signed (31 downto 0) := (others => '0');
+  signal result: unsigned (31 downto 0) := (others => '0');
   begin
     --Resultat    
     S <= std_logic_vector(result);
@@ -25,16 +26,16 @@ ARCHITECTURE Comportemental of ALU is
         result <= (others => '0');
         
         if OP = "00" then
-          result <= signed(A) + signed(B);
+          result <= unsigned(A) + unsigned(B);
      
         elsif OP = "01" then
-          result <= signed(B);
+          result <= unsigned(B);
           
         elsif OP = "10" then
-          result <= signed(A) - signed(B);
+          result <= unsigned(A) - unsigned(B);
 		      
         elsif OP = "11" then
-          result <= signed(A);
+          result <= unsigned(A);
 		  
         end if;
 
