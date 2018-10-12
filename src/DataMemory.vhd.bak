@@ -31,6 +31,7 @@ SIGNAL Banc : table :=init_banc;
 begin
   process (Clk)
   begin
+    DataOut <= Banc(to_integer(Unsigned(Addr)));
     if rising_edge(Clk) then
       if reset = '1' then
         Banc <= init_banc;
@@ -40,7 +41,7 @@ begin
         end if;
       end if;
     end if;
+
   end process;
-  DataOut <= Banc(to_integer(Unsigned(Addr)));
 end Behavioral;
 

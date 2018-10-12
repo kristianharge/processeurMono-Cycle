@@ -216,3 +216,735 @@ add wave -position end  sim:/eds_tb/TS
 add wave -position end  sim:/eds_tb/TN
 run -all
 quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.datamemory_tb(bench)
+# vsim work.datamemory_tb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position end  sim:/datamemory_tb/TClk
+add wave -position end  sim:/datamemory_tb/TReset
+add wave -position end  sim:/datamemory_tb/TDataIn
+add wave -position end  sim:/datamemory_tb/TDataOut
+add wave -position end  sim:/datamemory_tb/TAddr
+add wave -position end  sim:/datamemory_tb/TWrEn
+add wave -position end  sim:/datamemory_tb/TDone
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+run
+run
+quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+run
+run
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 125 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 225 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 275 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 325 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 375 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 425 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 475 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 525 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 575 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 625 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 675 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+quit -sim
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+quit -sim
+# Compile of DataMemory_tb.vhd failed with 1 errors.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 1 failed with 1 error. 
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+# ** Error: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd(70): (vcom-1136) Unknown identifier "banc".
+# ** Error: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd(70): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd(80): VHDL Compiler exiting
+# /opt/altera/13.0/modelsim_ase/linuxaloem/vcom failed.
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 125 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+quit -sim
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+# Compile of DataMemory_tb.vhd was successful.
+step
+step
+step
+step
+step
+quit -sim
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+step
+step
+step
+step
+step
+step
+quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Failure: write/read failed
+#    Time: 125 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+step -out
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+step -out
+# Next activity is in 25 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Failure: write/read failed
+#    Time: 225 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+step
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 125 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step
+step
+step
+step
+# ** Failure: write/read failed
+#    Time: 225 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+step -out
+# Next activity is in 25 ns.
+step -out
+step -out
+step -out
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+step
+step
+step
+step
+step
+# Break key hit 
+quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+quit -sim
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+quit -sim
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+# WARNING: No extended dataflow license exists
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory_tb
+# -- Compiling architecture BENCH of DataMemory_tb
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+run
+# ** Failure: write/read failed
+#    Time: 275 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step -out
+step -out
+# Next activity is in 25 ns.
+step -out
+step
+step
+step -out
+step -out
+step -out
+# Next activity is in 25 ns.
+step -out
+restart
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Failure: write/read failed
+#    Time: 175 ns  Iteration: 0  Process: /datamemory_tb/stimulus File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd
+# Break in ForLoop loop at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/DataMemory_tb.vhd line 70
+step
+step
+step
+# Next activity is in 25 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 25 ns.
+step
+quit -sim
+# Compile of DataMemory_tb.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.datamemory_tb
+# vsim -voptargs=+acc work.datamemory_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.datamemory_tb(bench)
+# Loading work.datamemory(behavioral)
+add wave -position insertpoint  \
+sim:/datamemory_tb/Done \
+sim:/datamemory_tb/TClk \
+sim:/datamemory_tb/TReset \
+sim:/datamemory_tb/TDataIn \
+sim:/datamemory_tb/TDataOut \
+sim:/datamemory_tb/TAddr \
+sim:/datamemory_tb/TWrEn \
+sim:/datamemory_tb/TDone
+run -continue
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_tb/UUT
+run
+# ** Note: Initialization Test 1 passed.
+#    Time: 1064 ps  Iteration: 0  Instance: /datamemory_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# ** Note: Write/Read Test passed.
+#    Time: 6400 ns  Iteration: 0  Instance: /datamemory_tb
+quit -sim

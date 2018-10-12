@@ -67,9 +67,9 @@ begin
       TADDR <= conv_std_logic_vector(i, TADDR'length);
       TDataIn <= conv_std_logic_vector(i, TDataIn'length);
       wait until TClk = '1';
-      wait until TClk = '0';
       ASSERT TDataOut = conv_std_logic_vector(i, TDataIn'length) REPORT "write/read failed"  -- Initialization test.
       SEVERITY FAILURE; 
+      wait until TClk = '0';
       
     end loop;    
     REPORT "Write/Read Test passed." SEVERITY note;
