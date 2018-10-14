@@ -21,7 +21,7 @@ ENTITY ProcessingUnit IS
 		
 	);
 END ProcessingUnit;
-ARCHITECTURE Structurel of ProcessingUnit is
+ARCHITECTURE Structural of ProcessingUnit is
   --Components are in order
   ------------------------------------------------------------
   --Banc de donees 16 32
@@ -59,8 +59,8 @@ ARCHITECTURE Structurel of ProcessingUnit is
 	PORT
 	(
 		COM :  IN  std_logic;
-		A, B :  IN  std_logic_vector (N-1 downto 0);
-		S :  OUT  std_logic_vector (N-1 downto 0)
+		A, B :  IN  std_logic_vector (N - 1 downto 0);
+		S :  OUT  std_logic_vector (N - 1 downto 0)
 	);
   END component;
   
@@ -90,15 +90,15 @@ end component;
   --Component end
   ------------------------------------------------------------
   --Signals
-  signal A, B, W, ALU_out, EDS_out, Mux21_out, DataOut: std_logic_vector(31 downto 0);
-  signal immSize: integer;
+  signal A, B, W, ALU_out, EDS_out, Mux2_1_out, Mux2_2_out, DataOut: std_logic_vector(31 downto 0);
+  signal immSize: integer := 8;
   
 begin
   C0: component BancRegistres16_32
   PORT map(
 	 Clk		=> clk,
 	 Reset		=> reset,
-	 W => Mux21_out,
+	 W => Mux2_2_out,
 	 RA => RA,
 	 RB => RB,
   	RW => RW,
@@ -117,19 +117,19 @@ begin
 	);
 	
   C2:component Mux2
-  generic map ( N => immSize )
+  generic map ( N => 32 )
 	PORT map
 	(
 		COM => SEL1,
 		A => B,
 		B => EDS_out,
-		S => Mux21_out
+		S => Mux2_1_out
 	);
 	
   C3: COMPONENT ALU PORT MAP(
 	 OP => OP,
     A => A,
-    B => Mux21_out,
+    B => Mux2_1_out,
     S => ALU_out,
     N => flag
   );
@@ -143,17 +143,17 @@ begin
     WrEn => WrEn_DM);
     
   C5:component Mux2
-  generic map ( N => immSize )
+  generic map ( N => 32 )
 	PORT map
 	(
 		COM => SEL2,
 		A => ALU_out,
 		B => DataOut,
-		S => Mux21_out
+		S => Mux2_2_out
 	);  
 	
   --Code begins here
   ------------------------------------------------------------
   immSize <= 8;
-  busW <= Mux21_out;
-end Structurel;
+  busW <= Mux2_2_out;
+end Structural;

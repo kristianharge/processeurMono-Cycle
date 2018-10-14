@@ -4,6 +4,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
 
 entity DataMemory_tb is
  port( Done: out boolean:=FALSE);
@@ -53,18 +54,20 @@ begin
     for i in 0 to 63 loop
       TADDR <= conv_std_logic_vector(i, TADDR'length);
       wait for 1 ps;
-      ASSERT TDataOut = "0" REPORT "Initialization failed"  -- Initialization test.
+      ASSERT TDataOut = X"00000000" REPORT "Initialization failed"  -- Initialization test.
       SEVERITY FAILURE; 
     end loop;
     REPORT "Initialization Test 1 passed." SEVERITY note;
         
     -- Tester l'ecriture 
-    TWrEn <= '1';
     for i in 0 to 63 loop
-      wait until TClk = '0';
+      TWrEn <= '1';
       TADDR <= conv_std_logic_vector(i, TADDR'length);
       TDataIn <= conv_std_logic_vector(i, TDataIn'length);
+      wait until TClk = '0';
       wait until TClk = '1';
+      TWrEn <= '0';
+      wait for 1 ps;
       ASSERT TDataOut = conv_std_logic_vector(i, TDataIn'length) REPORT "write/read failed"  -- Initialization test.
       SEVERITY FAILURE; 
       

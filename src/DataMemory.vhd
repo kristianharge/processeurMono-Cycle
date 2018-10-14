@@ -27,9 +27,8 @@ VARIABLE result : table;
     RETURN result;
   END init_banc;
 SIGNAL Banc : table :=init_banc;
-
 begin
-  process (Clk)
+  stimulus : process (Clk)
   begin
     if rising_edge(Clk) then
       if reset = '1' then
@@ -39,8 +38,7 @@ begin
           Banc(to_integer(Unsigned(Addr))) <= DataIn;
         end if;
       end if;
-    end if;
-    
+    end if;    
   end process;
   DataOut <= Banc(to_integer(Unsigned(Addr)));
 end Behavioral;
