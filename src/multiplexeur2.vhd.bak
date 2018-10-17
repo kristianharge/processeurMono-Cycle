@@ -10,7 +10,7 @@ ENTITY Mux2 IS
 	PORT
 	(
 		COM :  IN  std_logic;
-		A, B :  IN  std_logic_vector (31 downto 0);
+		A, B :  IN  std_logic_vector (N - 1 downto 0);
 		S :  OUT  std_logic_vector (N-1 downto 0)
 	);
 END Mux2;

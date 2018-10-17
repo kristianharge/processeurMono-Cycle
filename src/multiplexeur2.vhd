@@ -2,6 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
+-- Si 0 on prend A, si 1 on prend B
 ENTITY Mux2 IS
   generic (
     N : positive range 1 to 32

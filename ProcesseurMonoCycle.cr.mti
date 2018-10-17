@@ -16,10 +16,8 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling entity ProcessingUnit
--- Compiling architecture Structurel of ProcessingUnit
+-- Compiling architecture Structural of ProcessingUnit
 ** Warning: [9] /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd(111): (vcom-1049) Actual for generic "N" depends on value of signal "immSize".
-** Warning: [9] /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd(120): (vcom-1049) Actual for generic "N" depends on value of signal "immSize".
-** Warning: [9] /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd(146): (vcom-1049) Actual for generic "N" depends on value of signal "immSize".
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS_TB.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/EDS_TB.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -69,7 +67,8 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity EDS
 -- Compiling architecture Comportemental of EDS
 
-} {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/BancRegistres_ALU_tb.vhd {1 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/BancRegistres_ALU_tb.vhd
+} {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/BancRegistres_ALU_tb.vhd {2 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/BancRegistres_ALU_tb.vhd
+** Warning: (14) Failed to open "/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/ProcesseurMonoCycle.mpf" specified by the MODELSIM environment variable.
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -97,6 +96,15 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package std_logic_unsigned
 -- Compiling entity alu_tb
 -- Compiling architecture bench of alu_tb
+
+} {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd {1 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity IManTB
+-- Compiling architecture bench of IManTB
 
 } {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistre16_32_tb.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -135,6 +143,15 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling entity mux2tb
 -- Compiling architecture bench of mux2tb
 
+} {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd {1 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PCreg
+-- Compiling architecture Comportemental of PCreg
+
 } {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ALU.vhd {1 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ALU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -155,6 +172,14 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling architecture comportemental of alu
 -- Loading entity alu
 
+} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity banc_alu
+-- Compiling architecture structurel of banc_alu
+
 } {} {}} /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/DataMemory.vhd {1 {vcom -work work -2002 -explicit /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/DataMemory.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -163,13 +188,5 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity DataMemory
 -- Compiling architecture Behavioral of DataMemory
-
-} {} {}} C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/KH/Documents/GitHub/processeurMono-Cycle/BancRegistres_ALU.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Compiling entity banc_alu
--- Compiling architecture structurel of banc_alu
 
 } {} {}}
