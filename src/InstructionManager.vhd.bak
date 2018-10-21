@@ -1,6 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 USE ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
 
 ENTITY InstructionManager IS 
 	PORT
@@ -16,16 +17,14 @@ END InstructionManager;
 ARCHITECTURE Behavioral of InstructionManager is
   --Components are in order
   ------------------------------------------------------------
-  --Signal PC
-  component PCreg IS   
-	PORT
-	(
-		clk: in std_logic;
-		rst: in std_logic;
-		E: in std_logic_vector (31 downto 0);
-		S: out std_logic_vector (31 downto 0)
-	);
-  END component;
+  --data memory
+  component instruction_memory is 
+	port(
+		PC: in std_logic_vector (31 downto 0);
+		Instruction: out std_logic_vector (31 downto 0)
+    );
+  end component;
+  
   --Multiplexor 2
   component Mux2 IS
   generic (
@@ -54,17 +53,16 @@ ARCHITECTURE Behavioral of InstructionManager is
   --Signals
   signal EDSSize: integer := 24;
   signal Mux2Size: integer := 32;
-  signal Amux, Bmux, Smux, Seds, PC : std_logic_vector (31 downto 0);
-  
+  signal Amux, Bmux, Seds, Smux, PC, IMout : std_logic_vector (31 downto 0) := (others => '0');
+
   begin
-    C1: component PCreg
-    port map (
-      clk => Clk,
-      rst => Reset,
-      E => Smux,
-      S => PC
+    C0: component instruction_memory 
+	  port map(
+		  PC => PC,
+		  Instruction => IMout
     );
-    C2: component Mux2
+    
+    C1: component Mux2
     generic map ( N => Mux2Size)
     port map (
       COM => nPCSel,
@@ -72,7 +70,7 @@ ARCHITECTURE Behavioral of InstructionManager is
       B => Bmux,
       S => Smux
     );
-    C3: component EDS
+    C2: component EDS
     generic map ( N => EDSSize )
     port map (
       A => Offset,
@@ -82,14 +80,14 @@ ARCHITECTURE Behavioral of InstructionManager is
     ------------------------------------------------------------
     process (clk, Reset)
       begin
-        if rising_edge(Clk) then
-          Amux <= std_logic_vector(signed(PC) + 1);
-          Bmux <= std_logic_vector(signed(PC) + signed (Seds) + 1);
-          Instruction <= Amux;
-        end if;
         if Reset = '1' then
           PC <= (others => '0');
           Instruction <= (others => '0');
+        elsif rising_edge(Clk) then
+          PC <= Smux;
         end if;
       end process;
+      Amux <= PC + 1;
+      Bmux <= PC + Seds + 1;
+      Instruction <= IMout;
 end Behavioral;

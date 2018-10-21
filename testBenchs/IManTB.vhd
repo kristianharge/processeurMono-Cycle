@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
 
 entity IManTB is
  port(Done: out boolean:=FALSE);
@@ -38,21 +39,29 @@ Architecture bench of IManTB is
   -- Generation d'une horloge
   TClk <= '0' when not Start else not TClk after 2 ns;
   -- Generation d'un reset au debut
-  TReset <= '1', '0' after 5 ns;
+  TReset <= '1', '0' after 2 ns;
 
   test_bench : process
   begin
    
    wait for 1 ns;
+   
         Start <= true;
         TOff <= "000000000000000000000001";
         TnPCSel <= '0';
         wait for 10 ns;
-        ASSERT signed(TInstruc) = signed(TOff) + 1 REPORT "ERROR: InstructionManager TEST 1 FAILED)" -- InstructionManager Test 1
-        SEVERITY FAILURE; 
-        REPORT "InstructionManager Test 1 passed." SEVERITY note;
+        --ASSERT TInstruc = 0 REPORT "ERROR: InstructionManager TEST 1 FAILED)" -- InstructionManager Test 1
+        --SEVERITY FAILURE; 
+        --REPORT "InstructionManager Test 1 passed." SEVERITY note;
         
-
+        TOff <= "000000000000000000001000";
+        TnPCSel <= '0';
+        wait for 10 ns;
+        --ASSERT TInstruc = 0 REPORT "ERROR: InstructionManager TEST 2 FAILED)" -- InstructionManager Test 2
+        --SEVERITY FAILURE; 
+        --REPORT "InstructionManager Test 2 passed." SEVERITY note;
+        
+  REPORT "Bench test is successfully finished." SEVERITY note;
   Done <= TRUE;
   Wait;
   end process;

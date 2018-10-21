@@ -1,0 +1,19 @@
+Thu Oct 18 19:15:33 Paris, Madrid (heure d?été) 2018
+Trace back: window name "source2" already exists in parent
+    while executing
+"frame [GetActiveWindowFooter].$name"
+    (procedure "Console::CreateWindowFooter" line 3)
+    invoked from within
+"Console::CreateWindowFooter [$frame_name cget -windowname]"
+    (object "::.main_pane.source2" method "::mtiwidgets::WindowObj::Activate" body line 23)
+    invoked from within
+"$window Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 34)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  2: ::tkerror {window name "source2" already exists in parent}
+  1: ::bgerror {window name "source2" already exists in parent}
