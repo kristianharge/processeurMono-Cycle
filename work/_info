@@ -16,7 +16,7 @@ L5
 V=7HhKfGWn:lP8EBDNLmAG1
 Z7 OV;C;10.1d;51
 32
-Z8 !s108 1540555340.866671
+Z8 !s108 1540560227.879563
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ALU.vhd|
 Z10 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ALU.vhd|
 Z11 o-work work -2002 -explicit -O0
@@ -85,7 +85,7 @@ L5
 Vi_^K:Z[3GY<Oh`3Qh[EDT3
 R7
 32
-Z27 !s108 1540555340.960331
+Z27 !s108 1540560227.958840
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/Banc_ALU.vhd|
 Z29 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/Banc_ALU.vhd|
 R11
@@ -159,7 +159,7 @@ L7
 V]maMGgoT2ZeE>ToV=m6jU3
 R7
 32
-Z42 !s108 1540555341.056947
+Z42 !s108 1540560228.058463
 Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/BancRegistre16_32.vhd|
 Z44 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/BancRegistre16_32.vhd|
 R11
@@ -233,7 +233,7 @@ L5
 VLEfcH51`h00BoR1k20GW63
 R7
 32
-Z50 !s108 1540555341.131585
+Z50 !s108 1540560228.139925
 Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/DataMemory.vhd|
 Z52 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/DataMemory.vhd|
 R11
@@ -302,7 +302,7 @@ L5
 VSPJ9?kb1LaShFN=3RjKjo3
 R7
 32
-Z58 !s108 1540555341.225620
+Z58 !s108 1540560228.238114
 Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd|
 Z60 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/EDS.vhd|
 R11
@@ -356,7 +356,7 @@ R11
 R12
 !s100 D:j3i<B]CLhN0gg_H1E3<0
 Eimantb
-Z64 w1540303449
+Z64 w1540560226
 R38
 R39
 R1
@@ -370,7 +370,7 @@ L6
 V@4MKI?>?8:fNAAUz^Aa>Q1
 R7
 32
-Z67 !s108 1540555340.555373
+Z67 !s108 1540560227.798623
 Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd|
 Z69 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd|
 R11
@@ -386,7 +386,7 @@ R3
 DEx4 work 6 imantb 0 22 @4MKI?>?8:fNAAUz^Aa>Q1
 l29
 L11
-VS>EOkn0LTOJEnIcJF7:;_2
+VHjc>;f1=XD9?ln83IiH7]1
 R7
 32
 R67
@@ -394,7 +394,7 @@ R68
 R69
 R11
 R12
-!s100 9:F0c^2jWgLz0=<3:1[UU0
+!s100 B^kjOW3b4^6V6Pn__4ije3
 !i10b 1
 Einstruction_memory
 Z70 w1540555247
@@ -411,7 +411,7 @@ V8Fo:zbGzim7oaS19Bce<i1
 R7
 32
 !i10b 1
-Z73 !s108 1540555341.745677
+Z73 !s108 1540560228.655192
 Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd|
 Z75 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd|
 R11
@@ -420,11 +420,11 @@ Artl
 R1
 R2
 R3
-DEx4 work 18 instruction_memory 0 22 8Fo:zbGzim7oaS19Bce<i1
+Z76 DEx4 work 18 instruction_memory 0 22 8Fo:zbGzim7oaS19Bce<i1
 l35
 L12
-V;;FEo_a[kke>TTPVkn68A1
-!s100 IH<8_B1B?zI;;mj_I7XSM3
+Z77 V;;FEo_a[kke>TTPVkn68A1
+Z78 !s100 IH<8_B1B?zI;;mj_I7XSM3
 R7
 32
 !i10b 1
@@ -434,23 +434,23 @@ R75
 R11
 R12
 Einstructionmanager
-R64
+Z79 w1540557848
 R38
 R39
 R1
 R2
 R3
 R4
-Z76 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd
-Z77 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd
+Z80 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd
+Z81 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd
 l0
 L6
 V6LkZ8Q5FjnhTMKiP9WHUB3
 R7
 32
-Z78 !s108 1540555341.318464
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd|
-Z80 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd|
+Z82 !s108 1540560228.304307
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd|
+Z84 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd|
 R11
 R12
 !s100 Nf=hV2Q4WCAZbb<7BQMLo2
@@ -467,29 +467,29 @@ L17
 V?YzAd9SB0oj>Le=[cJk:<2
 R7
 32
-R78
-R79
-R80
+R82
+R83
+R84
 R11
 R12
 !s100 d[hcEGgF]Yi6@oS=PYe>P3
 !i10b 1
 Emux2
-Z81 w1539782611
+Z85 w1539782611
 R1
 R2
 R3
 R4
-Z82 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd
-Z83 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd
+Z86 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd
+Z87 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd
 l0
 L6
 VGB57aEo`L5J_?n:Rl6]5L1
 R7
 32
-Z84 !s108 1540555341.428845
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd|
-Z86 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd|
+Z88 !s108 1540560228.382368
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd|
+Z90 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/multiplexeur2.vhd|
 R11
 R12
 !s100 ?Ij]V3UTK^LInl>JLkILA0
@@ -504,21 +504,21 @@ L19
 VLZ=@V<Ac`R2RZec8zG0:b2
 R7
 32
-R84
-R85
-R86
+R88
+R89
+R90
 R11
 R12
 !s100 @902>P49XOL883EGC]MQ62
 !i10b 1
 Emux2tb
-Z87 w1539880371
+Z91 w1539880371
 R14
 R15
 R16
 R17
-Z88 8C:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/mux2TB.vhd
-Z89 FC:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/mux2TB.vhd
+Z92 8C:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/mux2TB.vhd
+Z93 FC:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/mux2TB.vhd
 l0
 L5
 VOW_KJQVgmE;boAI]UlACH2
@@ -544,21 +544,21 @@ R11
 R12
 !s100 mL_0g^YajgWf34cPfXEhX2
 Epcreg
-Z90 w1539783925
+Z94 w1539783925
 R1
 R2
 R3
 R4
-Z91 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd
-Z92 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd
+Z95 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd
+Z96 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd
 l0
 L5
 VK<@4oj20eO<YaL[>ZV@GI2
 R7
 32
-Z93 !s108 1540555341.525407
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd|
-Z95 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd|
+Z97 !s108 1540560228.463938
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd|
+Z99 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/PCreg.vhd|
 R11
 R12
 !s100 [?najMEkNJjSiY@gl:GB_3
@@ -573,9 +573,9 @@ L15
 VOXED6<RWZHeW^M48z3[To2
 R7
 32
-R93
-R94
-R95
+R97
+R98
+R99
 R11
 R12
 !s100 A8N0f3EF>F=z8`[D;ekd:0
@@ -586,16 +586,16 @@ R1
 R2
 R3
 R4
-Z96 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd
-Z97 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd
+Z100 8/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd
+Z101 F/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd
 l0
 L5
 VUIEjljAlQ7?lo29OHP8OP2
 R7
 32
-Z98 !s108 1540555341.639879
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd|
-Z100 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd|
+Z102 !s108 1540560228.557028
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|/nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd|
+Z104 !s107 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/ProcessingUnit.vhd|
 R11
 R12
 !s100 I3iV:6?fRTUa0``_U1=V<1
@@ -604,16 +604,16 @@ Astructural
 R1
 R2
 R3
-Z101 DEx4 work 14 processingunit 0 22 UIEjljAlQ7?lo29OHP8OP2
+Z105 DEx4 work 14 processingunit 0 22 UIEjljAlQ7?lo29OHP8OP2
 l96
 L24
 V=FJE;e;JlocSMW8_1DRI82
 !s100 M3eJFOXoW1Wch?l^zjW<53
 R7
 32
-R98
-R99
-R100
+R102
+R103
+R104
 R11
 R12
 !i10b 1
@@ -621,7 +621,7 @@ Astructurel
 R1
 R2
 R3
-R101
+R105
 l96
 L24
 Vz`nITd5C;eXFLdRi[DaDO0
@@ -630,8 +630,8 @@ R7
 R11
 R12
 w1539357595
-R99
-R100
+R103
+R104
 !s108 1539357613.941477
 !s100 L@L6`VW]ND_N[n552Y[1j3
 !i10b 1
@@ -640,8 +640,8 @@ R13
 R30
 R16
 R17
-Z102 8C:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/ProcessingUnit_tb.vhd
-Z103 FC:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/ProcessingUnit_tb.vhd
+Z106 8C:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/ProcessingUnit_tb.vhd
+Z107 FC:/Users/KH/Documents/GitHub/processeurMono-Cycle/testBenchs/ProcessingUnit_tb.vhd
 l0
 L8
 VA_SjU@GdaCQf40J?Vj;=j3

@@ -11,3 +11,1177 @@
 # Compile of ProcessingUnit.vhd was successful with warnings.
 # Compile of instruction_memory.vhd was successful.
 # 11 compiles, 0 failed with no errors. 
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 3 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+# Break key hit 
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 3 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+# WARNING: No extended dataflow license exists
+quit -sim
+# Compile of IManTB.vhd was successful.
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 3 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+quit -sim
+# Compile of IManTB.vhd was successful.
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 4 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 8 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+# WARNING: No extended dataflow license exists
+quit -sim
+# Compile of IManTB.vhd was successful.
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 4 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 8 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+# Compile of IManTB.vhd was successful.
+# Load canceled
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 8 ns  Iteration: 0  Instance: /imantb
+# Compile of IManTB.vhd was successful.
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 8 ns  Iteration: 0  Instance: /imantb
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 8 ns  Iteration: 0  Instance: /imantb
+run
+# WARNING: No extended dataflow license exists
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 8 ns  Iteration: 0  Instance: /imantb
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim work.imantb(bench)
+# vsim work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 8 ns  Iteration: 0  Instance: /imantb
+run
+run
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity IManTB
+# -- Compiling architecture bench of IManTB
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+restart
+add wave -position insertpoint  \
+sim:/imantb/Done \
+sim:/imantb/TClk \
+sim:/imantb/TReset \
+sim:/imantb/TnPCSel \
+sim:/imantb/TInstruc \
+sim:/imantb/TOff \
+sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+run
+run
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity IManTB
+# -- Compiling architecture bench of IManTB
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/imantb/Done \
+sim:/imantb/TClk \
+sim:/imantb/TReset \
+sim:/imantb/TnPCSel \
+sim:/imantb/TInstruc \
+sim:/imantb/TOff \
+sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+run
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity IManTB
+# -- Compiling architecture bench of IManTB
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity IManTB
+# -- Compiling architecture bench of IManTB
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity IManTB
+# -- Compiling architecture bench of IManTB
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity instruction_memory
+# -- Compiling architecture RTL of instruction_memory
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/imantb/Done \
+sim:/imantb/TClk \
+sim:/imantb/TReset \
+sim:/imantb/TnPCSel \
+sim:/imantb/TInstruc \
+sim:/imantb/TOff \
+sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+run
+run
+# Break key hit 
+quit -sim
+vcom -work work -2002 -explicit -O0 /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity InstructionManager
+# -- Compiling architecture Behavioral of InstructionManager
+# ** Warning: [9] /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd(66): (vcom-1049) Actual for generic "N" depends on value of signal "Mux2Size".
+# ** Warning: [9] /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/InstructionManager.vhd(74): (vcom-1049) Actual for generic "N" depends on value of signal "EDSSize".
+vsim -voptargs=+acc work.imantb
+# vsim -voptargs=+acc work.imantb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position insertpoint  \
+sim:/imantb/Done \
+sim:/imantb/TClk \
+sim:/imantb/TReset \
+sim:/imantb/TnPCSel \
+sim:/imantb/TInstruc \
+sim:/imantb/TOff \
+sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+run
+add wave -position end  sim:/imantb/UUT/C1/COM
+add wave -position end  sim:/imantb/UUT/C1/S
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+run
+# WARNING: No extended dataflow license exists
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+restart -f
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position 4  sim:/imantb/Done
+add wave -position 5  sim:/imantb/TClk
+add wave -position 6  sim:/imantb/TReset
+add wave -position 7  sim:/imantb/TnPCSel
+add wave -position 8  sim:/imantb/TInstruc
+add wave -position 9  sim:/imantb/TOff
+add wave -position 10  sim:/imantb/Start
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+add wave -position end  sim:/imantb/UUT/C1/S
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+quit -sim
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: Bench test is successfully finished.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+# ** Fatal: (vsim-3734) Index value 65 is out of range 0 to 63.
+#    Time: 131 ns  Iteration: 1  Process: /imantb/UUT/C0/line__36 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd
+# Fatal error in Architecture RTL at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd line 36
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd 36 Architecture RTL
+# 
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 6 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+run
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 7 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 11 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 67
+run -all
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 11 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 15 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+run -all
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+# ** Note: Bench test is successfully finished.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+# ** Fatal: (vsim-3734) Index value 65 is out of range 0 to 63.
+#    Time: 91 ns  Iteration: 1  Process: /imantb/UUT/C0/line__36 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd
+# Fatal error in Architecture RTL at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd line 36
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd 79 Process test_bench
+# 
+add wave -position end  sim:/imantb/UUT/C1/S
+restart
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 6 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+restart
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 6 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+run
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 7 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 11 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 67
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 11 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 15 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+# ** Note: Bench test is successfully finished.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+restart
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Failure: ERROR: InstructionManager TEST 1 FAILED)
+#    Time: 6 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 54
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 7 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 11 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 67
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 11 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 15 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+# ** Note: Bench test is successfully finished.
+#    Time: 15 ns  Iteration: 0  Instance: /imantb
+quit -sim
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 7 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 60
+run
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 7 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 3 FAILED)
+#    Time: 11 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 67
+# Compile of IManTB.vhd was successful.
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 10 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 3 passed.
+#    Time: 14 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 4 FAILED)
+#    Time: 18 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+add wave -position end  sim:/imantb/UUT/C1/S
+restart
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 10 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 3 passed.
+#    Time: 14 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 4 FAILED)
+#    Time: 18 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+add wave -position end  sim:/imantb/UUT/PC
+restart
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 10 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 3 passed.
+#    Time: 14 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 4 FAILED)
+#    Time: 18 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 73
+# Compile of IManTB.vhd was successful.
+quit -sim
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 10 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 61
+add wave -position end  sim:/imantb/UUT/PC
+add wave -position end  sim:/imantb/UUT/C1/S
+restart
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Failure: ERROR: InstructionManager TEST 2 FAILED)
+#    Time: 10 ns  Iteration: 0  Process: /imantb/test_bench File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd
+# Break in Process test_bench at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/testBenchs/IManTB.vhd line 61
+# Compile of IManTB.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of Banc_ALU.vhd was successful.
+# Compile of BancRegistre16_32.vhd was successful.
+# Compile of DataMemory.vhd was successful.
+# Compile of EDS.vhd was successful.
+# Compile of InstructionManager.vhd was successful with warnings.
+# Compile of multiplexeur2.vhd was successful.
+# Compile of PCreg.vhd was successful.
+# Compile of ProcessingUnit.vhd was successful with warnings.
+# Compile of instruction_memory.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.imantb(bench)
+# vsim -voptargs=+acc work.imantb(bench) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.imantb(bench)
+# Loading work.instructionmanager(behavioral)
+# Loading work.instruction_memory(rtl)
+# Loading work.mux2(comportemental)
+# Loading work.eds(comportemental)
+add wave -position end  sim:/imantb/Done
+add wave -position end  sim:/imantb/TClk
+add wave -position end  sim:/imantb/TReset
+add wave -position end  sim:/imantb/TnPCSel
+add wave -position end  sim:/imantb/TInstruc
+add wave -position end  sim:/imantb/TOff
+add wave -position end  sim:/imantb/Start
+run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /imantb/UUT
+# ** Note: InstructionManager Test 1 passed.
+#    Time: 6 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 2 passed.
+#    Time: 10 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 3 passed.
+#    Time: 14 ns  Iteration: 0  Instance: /imantb
+# ** Note: InstructionManager Test 4 passed.
+#    Time: 18 ns  Iteration: 0  Instance: /imantb
+# ** Note: Bench test is successfully finished.
+#    Time: 18 ns  Iteration: 0  Instance: /imantb
+# ** Fatal: (vsim-3734) Index value 64 is out of range 0 to 63.
+#    Time: 91 ns  Iteration: 1  Process: /imantb/UUT/C0/line__36 File: /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd
+# Fatal error in Architecture RTL at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd line 36
+# 
+# HDL call sequence:
+# Stopped at /nfs/home/sasl/eleves/ei-se/3520311/ProcesseurMonoCycle/src/instruction_memory.vhd 36 Architecture RTL
+# 
+quit -sim
