@@ -46,20 +46,40 @@ Architecture bench of IManTB is
    
    wait for 1 ns;
    
-        Start <= true;
-        TOff <= "000000000000000000000001";
-        TnPCSel <= '0';
-        wait for 10 ns;
-        --ASSERT TInstruc = 0 REPORT "ERROR: InstructionManager TEST 1 FAILED)" -- InstructionManager Test 1
-        --SEVERITY FAILURE; 
-        --REPORT "InstructionManager Test 1 passed." SEVERITY note;
         
-        TOff <= "000000000000000000001000";
+        Start <= true;
         TnPCSel <= '0';
-        wait for 10 ns;
-        --ASSERT TInstruc = 0 REPORT "ERROR: InstructionManager TEST 2 FAILED)" -- InstructionManager Test 2
-        --SEVERITY FAILURE; 
-        --REPORT "InstructionManager Test 2 passed." SEVERITY note;
+        TOff <= "000000000000000000000001";
+        wait until TClk = '1';
+        wait for 3 ns;
+        ASSERT TInstruc = x"E3A01020" REPORT "ERROR: InstructionManager TEST 1 FAILED)" -- InstructionManager Test 1
+        SEVERITY FAILURE; 
+        REPORT "InstructionManager Test 1 passed." SEVERITY note;
+        
+        TnPCSel <= '1';
+        wait for 4 ns;
+        ASSERT TInstruc = x"E3A02000" REPORT "ERROR: InstructionManager TEST 2 FAILED)" -- InstructionManager Test 2
+        SEVERITY FAILURE; 
+        REPORT "InstructionManager Test 2 passed." SEVERITY note;
+        
+        TOff <= "000000000000000000000010";
+        TnPCSel <= '0';
+        wait for 4 ns;
+        ASSERT TInstruc = x"E0822000" REPORT "ERROR: InstructionManager TEST 3 FAILED)" -- InstructionManager Test 2
+        SEVERITY FAILURE; 
+        REPORT "InstructionManager Test 3 passed." SEVERITY note;
+        
+        TnPCSel <= '1';
+        wait for 4 ns;
+        ASSERT TInstruc = x"E2811001" REPORT "ERROR: InstructionManager TEST 4 FAILED)" -- InstructionManager Test 2
+        SEVERITY FAILURE; 
+        REPORT "InstructionManager Test 4 passed." SEVERITY note;
+        
+        wait for 4 ns;
+        ASSERT TInstruc = x"E6012000" REPORT "ERROR: InstructionManager TEST 4 FAILED)" -- InstructionManager Test 2
+        SEVERITY FAILURE; 
+        REPORT "InstructionManager Test 4 passed." SEVERITY note;
+
         
   REPORT "Bench test is successfully finished." SEVERITY note;
   Done <= TRUE;
