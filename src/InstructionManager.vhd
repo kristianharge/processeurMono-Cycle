@@ -82,12 +82,11 @@ ARCHITECTURE Behavioral of InstructionManager is
       begin
         if Reset = '1' then
           PC <= (others => '0');
-          Instruction <= (others => '0');
         elsif rising_edge(Clk) then
           PC <= Smux;
-          Instruction <= IMout;
         end if;
       end process;
+      Instruction <= IMout;
       Amux <= PC + 1;
       Bmux <= PC + Seds + 1;
 end Behavioral;

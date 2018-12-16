@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use ieee.numeric_std.all;
+use work.common.all;
 
 entity EDS_TB is
  port( OK: out boolean:=FALSE);
@@ -11,14 +12,6 @@ architecture BENCH of EDS_TB is
   signal TA: std_logic_vector (TN-1 downto 0);
   signal TS: std_logic_vector(31 downto 0);
   
-  component EDS is
-    generic ( N: positive range 1 to 32);
-    
-    PORT(
-		A :  IN  std_logic_vector (N-1 downto 0);
-		S :  OUT  std_logic_vector (31 downto 0)
-	);
-  end component;
   
 begin
   

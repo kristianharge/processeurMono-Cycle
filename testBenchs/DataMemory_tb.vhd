@@ -5,6 +5,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_arith.all;
+use work.common.all;
 
 entity DataMemory_tb is
  port( Done: out boolean:=FALSE);
@@ -18,17 +19,7 @@ SIGNAL TDataOut : std_logic_vector (31 downto 0);
 SIGNAL TAddr :  STD_LOGIC_VECTOR(5 DOWNTO 0);
 SIGNAL TWrEn : STD_LOGIC;
 SIGNAL TDone : boolean;
-  
-COMPONENT DataMemory IS 
-PORT(
-		Clk		: in STD_LOGIC;
-		Reset		: in STD_LOGIC;
-	  DataIn : in STD_LOGIC_VECTOR(31 DOWNTO 0);
-		DataOut :  OUT  std_logic_vector (31 downto 0);
-		Addr : in  STD_LOGIC_VECTOR(5 DOWNTO 0);
-    WrEn : in STD_LOGIC
-);
-END COMPONENT;
+ 
 
 begin
   Done <= TDone;

@@ -7,7 +7,7 @@ ENTITY DataMemory IS
 	(
 		Clk		: in STD_LOGIC;
 		Reset		: in STD_LOGIC;
-	  DataIn : in STD_LOGIC_VECTOR(31 DOWNTO 0);
+		DataIn : in STD_LOGIC_VECTOR(31 DOWNTO 0);
 		DataOut :  OUT  std_logic_vector (31 downto 0);
 		Addr : in  STD_LOGIC_VECTOR(5 DOWNTO 0);
     WrEn : in STD_LOGIC
@@ -23,7 +23,9 @@ VARIABLE result : table;
   BEGIN 
     FOR i IN 0 to 63 loop
         result(i) := (others =>'0');
+		--result(i) := STD_LOGIC_VECTOR(TO_UNSIGNED(63 - i,32));
     END LOOP;
+	result(32) := STD_LOGIC_VECTOR(TO_UNSIGNED(2,32));
     RETURN result;
   END init_banc;
 SIGNAL Banc : table :=init_banc;

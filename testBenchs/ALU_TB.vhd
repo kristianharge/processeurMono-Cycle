@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 USE ieee.std_logic_unsigned.all;
+use work.common.all;
 
 entity ALU_TB is
  port( OK: out boolean:=FALSE);
@@ -11,15 +12,7 @@ architecture BENCH of ALU_TB is
   signal TA,TB, TS : std_logic_vector(31 downto 0);
   signal TN: std_logic;
   
-  component ALU is 
-    PORT(
-		OP :  IN  std_logic_vector (1 downto 0);
-		A, B :  IN  std_logic_vector (31 downto 0);
-		S :  OUT  std_logic_vector (31 downto 0);
-		N : OUT std_logic
-	);
-  end component;
-  
+ 
 begin
   
   UUT: COMPONENT ALU PORT MAP(

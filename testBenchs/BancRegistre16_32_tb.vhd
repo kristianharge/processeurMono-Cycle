@@ -7,6 +7,7 @@ use IEEE.STD_LOGIC_1164.all;
 use ieee.STD_LOGIC_unsigned.all;
 use ieee.numeric_std.all;
 use ieee.STD_LOGIC_ARITH.all;
+use work.common.all;
 
 entity BancRegistres16_32_tb is
  port( Done: out boolean:=FALSE);
@@ -23,21 +24,6 @@ architecture BENCH of BancRegistres16_32_tb is
   SIGNAL 	TA : STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL 	TB : STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL 	TDone : boolean := false;
-  
-COMPONENT BancRegistres16_32 IS 
-PORT(
-	Clk		: in STD_LOGIC;
-	Reset		: in STD_LOGIC;
-	W : in STD_LOGIC_VECTOR(31 DOWNTO 0);
-	RA : in  STD_LOGIC_VECTOR(3 DOWNTO 0);
-	RB : in STD_LOGIC_VECTOR(3 DOWNTO 0);
-	RW : in STD_LOGIC_VECTOR(3 DOWNTO 0);
-	WE : in STD_LOGIC;
-	A : out STD_LOGIC_VECTOR(31 DOWNTO 0);
-	B : out STD_LOGIC_VECTOR(31 DOWNTO 0)
-);
-END COMPONENT;
-
 begin
   Done <= TDone;
   UUT: COMPONENT BancRegistres16_32 PORT MAP(

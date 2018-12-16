@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
+use work.common.all;
 
 entity IManTB is
  port(Done: out boolean:=FALSE);
@@ -14,17 +15,6 @@ Architecture bench of IManTB is
   signal TInstruc : std_logic_vector (31 downto 0);
   signal TOff : std_logic_vector (23 downto 0);
   signal Start : boolean := false;
-  
-  component InstructionManager IS 
-	PORT
-	(
-		Clk		: in STD_LOGIC;
-		Reset		: in STD_LOGIC;
-		Offset : in std_logic_vector (23 downto 0);
-		nPCSel : in std_logic;
-		Instruction :  OUT  std_logic_vector (31 downto 0)
-	);
-  END component;
   
   begin
     UUT: COMPONENT InstructionManager PORT MAP(

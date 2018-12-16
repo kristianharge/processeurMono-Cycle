@@ -8,6 +8,7 @@ use IEEE.STD_LOGIC_1164.all;
 use ieee.STD_LOGIC_unsigned.all;
 use ieee.numeric_std.all;
 use ieee.STD_LOGIC_ARITH.all;
+use work.common.all;
 
 entity Banc_ALU_tb is
  port(Done: out boolean:=FALSE);
@@ -26,22 +27,6 @@ architecture BENCH of Banc_ALU_tb is
 	SIGNAL 	TN,TZ,TC,TV : std_logic;
 	SIGNAL 	TDone : boolean := false;
   
-COMPONENT Banc_ALU IS 
-	PORT
-	(
-		Clk		: in STD_LOGIC;
-		Reset		: in STD_LOGIC;
-		WE : in STD_LOGIC;
-		RA : in  STD_LOGIC_VECTOR(3 DOWNTO 0);
-		RB : in STD_LOGIC_VECTOR(3 DOWNTO 0);
-		RW : in STD_LOGIC_VECTOR(3 DOWNTO 0);
-		W :  IN  std_logic_vector (31 downto 0);
-		OP :  IN  std_logic_vector (1 downto 0);
-		S :  OUT  std_logic_vector (31 downto 0);
-		N,Z,C,V : OUT std_logic
-	);
-END COMPONENT;
-
 begin
   Done <= TDone;
   UUT: COMPONENT Banc_ALU PORT MAP(
