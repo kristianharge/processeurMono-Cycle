@@ -79,8 +79,7 @@ BEGIN
           RegSel <= '0';
  	      when x"5" =>
 	        MuxSel <= muxsel_comp;
-          RA <= Instruction(3 downto 0);
-          RW <= Instruction(19 downto 16);
+          RA <= Instruction(19 downto 16);
           Imm <= Instruction(7 downto 0);
           Offset <= (others => '0');
           RegSel <= '0';
@@ -88,17 +87,17 @@ BEGIN
  	    end case;
  	  when x"E0" =>
 	    MuxSel<= muxsel_addr;
-      RA <= Instruction(3 downto 0);
-		  RB <= Instruction(15 downto 12);
-		  RW <= Instruction(19 downto 16);
-          Offset <= (others => '0');
-		  RegSel <= '0';
+        RA <= Instruction(3 downto 0);
+		RB <= Instruction(19 downto 16);
+		RW <= Instruction(15 downto 12);
+        Offset <= (others => '0');
+		RegSel <= '0';
  	  when x"E2" =>
  	    MuxSel<= muxsel_addi;
-		  RA <= Instruction(3 downto 0);
-		  RW <= Instruction(19 downto 16);
+		  RA <= Instruction(19 downto 16);
+		  RW <= Instruction(15 downto 12);
 		  Imm <= Instruction(7 downto 0);
-      Offset <= (others => '0');
+          Offset <= (others => '0');
 		  RegSel <= '0';
 	  --Acess Memoire
 	  
@@ -125,10 +124,10 @@ BEGIN
 		Offset <= Instruction(23 downto 0);
  	  when X"BA" =>
 	    if PSR(31) = '1' then 
-			MuxSel<= '0' & muxsel_blt(6 downto 0);
+			MuxSel<= muxsel_blt;
 			RegSel <= '0';
 		ELSE
-			MuxSel<= muxsel_blt;
+			MuxSel<= '0' & muxsel_blt(6 downto 0);
 			RegSel <= '0';
 		end if;
 		Offset <= Instruction(23 downto 0);

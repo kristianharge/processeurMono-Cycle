@@ -45,7 +45,7 @@ begin
     for i in 0 to 63 loop
       TADDR <= conv_std_logic_vector(i, TADDR'length);
       wait for 1 ps;
-      ASSERT TDataOut = conv_std_logic_vector(i,TDataOut'length) REPORT "Initialization failed"  -- Initialization test.
+      ASSERT TDataOut = conv_std_logic_vector(i,TDataIn'Out) REPORT "Initialization failed"  -- Initialization test.
       SEVERITY FAILURE; 
     end loop;
     REPORT "Initialization Test 1 passed." SEVERITY note;

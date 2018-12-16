@@ -30,7 +30,7 @@ Architecture bench of IManTB is
   -- Generation d'une horloge
   TClk <= '0' when TDone else not TClk after 2 ns;
   -- Generation d'un reset au debut
-  TReset <= '1', '0' after 3 ns;
+  TReset <= '1', '0' after 1 ns;
 
   test_bench : process
   begin

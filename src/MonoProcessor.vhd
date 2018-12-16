@@ -1,6 +1,5 @@
 library ieee;
 use ieee.STD_LOGIC_1164.all;
-use ieee.STD_LOGIC_unsigned.all;
 use ieee.numeric_std.all;
 use work.common.all;
  
@@ -8,7 +7,8 @@ ENTITY MonoProcessor IS
 PORT(
   Clk : IN STD_LOGIC;
   Reset : IN STD_LOGIC;
-  BusW : OUT STD_LOGIC_VECTOR(31 downto 0)
+  BusW : OUT STD_LOGIC_VECTOR(31 downto 0);
+	instr_type: out enum_instruction
 );
 END MonoProcessor;
 
@@ -31,7 +31,6 @@ ARCHITECTURE Structural OF MonoProcessor IS
 	Signal DataIn: STD_LOGIC_VECTOR(31 downto 0);
   Signal Offset : STD_LOGIC_VECTOR(23 downto 0);
   Signal Imm : STD_LOGIC_VECTOR(7 downto 0);
-	Signal instr_type: enum_instruction;
 BEGIN
 
 
@@ -60,19 +59,20 @@ BEGIN
     Imm => Imm,
     instr_type => instr_type);
 
-  UUT3: Component ProcessingUnit PORT MAP(
+  UUT3: Component ProcessingUnit_RegSel PORT MAP(
     CLK=> Clk, --overall
     RESET=> Reset, --overall
-    WrEn_Reg=> RegWr, --banc de registres
+    RegWr=> RegWr, --banc de registres
+    RegSel=> RegSel,
     RA => RA,
     RB => RB, --banc de registres
     RW => RW, --banc de registres
     busW => busW, --banc de registres
     Imm => Imm, --extension de signe
-    SEL1 => ALUSrc, --1er mux2
-    SEL2 => WrSrc, --2e mux2
-    WrEn_DM => MemWr, --data memory
-    OP => ALUCtr, --ALU
+    ALUsrc => ALUSrc, --1er mux2
+    WrSrc => WrSrc, --2e mux2
+    MemWr => MemWr, --data memory
+    ALUctr => ALUCtr, --ALU
     flag => flag --ALU
 	);
   

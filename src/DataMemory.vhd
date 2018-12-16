@@ -1,6 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 USE ieee.numeric_std.all;
+USE work.common.all;
 
 ENTITY DataMemory IS 
 	PORT
@@ -15,17 +16,14 @@ ENTITY DataMemory IS
 END DataMemory;
 
 ARCHITECTURE Behavioral of DataMemory is  
-TYPE table IS ARRAY (0 to 63) OF
-std_logic_vector(31 DOWNTO 0);
 
 FUNCTION init_banc RETURN table IS 
 VARIABLE result : table;
   BEGIN 
     FOR i IN 0 to 63 loop
-        result(i) := (others =>'0');
-		--result(i) := STD_LOGIC_VECTOR(TO_UNSIGNED(63 - i,32));
+      --  result(i) := (others =>'0');
+		    result(i) := STD_LOGIC_VECTOR(TO_UNSIGNED(i,32));
     END LOOP;
-	result(32) := STD_LOGIC_VECTOR(TO_UNSIGNED(2,32));
     RETURN result;
   END init_banc;
 SIGNAL Banc : table :=init_banc;

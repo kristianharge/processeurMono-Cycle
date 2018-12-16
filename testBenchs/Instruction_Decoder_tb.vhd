@@ -26,7 +26,6 @@ architecture BENCH of Instruction_Decoder_tb is
   SIGNAL TPC : STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL PSR : STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL TInstruction : STD_LOGIC_VECTOR(31 DOWNTO 0);
-  SIGNAL MuxSel : STD_LOGIC_VECTOR(7 downto 0);
   Signal TOffset : STD_LOGIC_VECTOR(23 downto 0);
   Signal TImm : STD_LOGIC_VECTOR(7 downto 0);
   
@@ -97,10 +96,15 @@ begin
     wait for 1 ps;
 	ASSERT Tinstr_type = STR REPORT "Decoding instruction(7) / STR failed"
 	SEVERITY FAILURE;
-    
+  
 	TPC <= X"00000008";
     wait for 1 ps;	
-	ASSERT Tinstr_type = BAL REPORT "Decoding instruction(8) / BAL failed"
+	ASSERT Tinstr_type = LDR REPORT "Decoding instruction(8) / LDR failed"
+	SEVERITY FAILURE;
+	
+	TPC <= X"00000009";
+    wait for 1 ps;	
+	ASSERT Tinstr_type = BAL REPORT "Decoding instruction(9) / BAL failed"
 	SEVERITY FAILURE;
     
 	

@@ -88,8 +88,8 @@ BEGIN
  	  when x"E0" =>
 	    MuxSel<= muxsel_addr;
         RA <= Instruction(3 downto 0);
-		RB <= Instruction(19 downto 16);
-		RW <= Instruction(15 downto 12);
+		    RB <= Instruction(19 downto 16);
+		    RW <= Instruction(15 downto 12);
         Offset <= (others => '0');
 		RegSel <= '0';
  	  when x"E2" =>
