@@ -39,15 +39,12 @@ BEGIN
   B <= Banc(to_integer(unsigned(RB)));
   REG_ACC : PROCESS(CLK, RA, RB, RW)
   BEGIN
-    
-    IF RISING_EDGE(CLK) THEN
-      IF RESET = '1' THEN
-        Banc <= init_banc;
-      ELSE        
-        IF WE = '1' THEN
-              Banc(to_integer(unsigned(RW))) <= W;
-        end if;
-      END IF;
+    IF RESET = '1' THEN
+		  Banc <= init_banc;
+    ELSIF RISING_EDGE(CLK) THEN
+    		IF WE = '1' THEN
+			 Banc(to_integer(unsigned(RW))) <= W;
+    		end if;
     END IF;
   END PROCESS;
 END Comportemental;

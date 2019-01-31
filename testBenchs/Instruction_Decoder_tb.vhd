@@ -24,7 +24,7 @@ architecture BENCH of Instruction_Decoder_tb is
   SIGNAL TRA,TRB,TRW : STD_LOGIC_VECTOR(3 DOWNTO 0);
   SIGNAL TRegSel : STD_LOGIC;
   SIGNAL TPC : STD_LOGIC_VECTOR(31 DOWNTO 0);
-  SIGNAL PSR : STD_LOGIC_VECTOR(31 DOWNTO 0);
+  SIGNAL TPSR : STD_LOGIC_VECTOR(31 DOWNTO 0);
   SIGNAL TInstruction : STD_LOGIC_VECTOR(31 DOWNTO 0);
   Signal TOffset : STD_LOGIC_VECTOR(23 downto 0);
   Signal TImm : STD_LOGIC_VECTOR(7 downto 0);
@@ -39,7 +39,7 @@ begin
   
   UUT1: COMPONENT Instruction_Decoder PORT MAP(
     Instruction => TInstruction,
-	PSR => PSR,
+	PSR => TPSR,
     nPCSEL => TnPCSEL,
     RegWr => TRegWr,
     ALUSrc => TALUSrc,

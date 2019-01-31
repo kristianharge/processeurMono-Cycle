@@ -59,7 +59,17 @@ begin
       wait until TClk = '1';
       TWrEn <= '0';
       wait for 1 ps;
-      ASSERT TDataOut = conv_std_logic_vector(63 - i, TDataIn'length) REPORT "write/read failed"  -- Initialization test.
+      ASSERT TDataOut = conv_std_logic_vector(63 - i, TDataIn'length) REPORT "write failed"  -- Initialization test.
+      SEVERITY FAILURE; 
+      
+    end loop;    
+    -- Tester la lecture 
+    for i in 0 to 63 loop
+      TWrEn <= '0';
+      TADDR <= conv_std_logic_vector(i, TADDR'length);
+      TDataIn <= conv_std_logic_vector(i, TDataIn'length);
+      wait for 10 ps;
+      ASSERT TDataOut = conv_std_logic_vector(63 - i, TDataIn'length) REPORT "read failed"  -- Initialization test.
       SEVERITY FAILURE; 
       
     end loop;    

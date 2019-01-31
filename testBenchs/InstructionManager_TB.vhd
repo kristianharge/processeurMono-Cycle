@@ -4,12 +4,12 @@ use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 use work.common.all;
 
-entity IManTB is
+entity InstructionManager_TB is
  port(Done: out boolean:=FALSE);
-end entity IManTB;
+end entity InstructionManager_TB;
 
 
-Architecture bench of IManTB is
+Architecture bench of InstructionManager_TB is
   
   signal TClk: std_logic := '0';
   signal TnPCSel, TReset  : std_logic;
@@ -30,7 +30,7 @@ Architecture bench of IManTB is
   -- Generation d'une horloge
   TClk <= '0' when TDone else not TClk after 2 ns;
   -- Generation d'un reset au debut
-  TReset <= '1', '0' after 1 ns;
+  TReset <= '1', '0' after 3 ns;
 
   test_bench : process
   begin

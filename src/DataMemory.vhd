@@ -30,15 +30,13 @@ SIGNAL Banc : table :=init_banc;
 begin
   stimulus : process (Clk)
   begin
-    if rising_edge(Clk) then
       if reset = '1' then
         Banc <= init_banc;
-      else
+      elsif rising_edge(Clk) then
         if WrEn = '1' then
           Banc(to_integer(Unsigned(Addr))) <= DataIn;
         end if;
       end if;
-    end if;    
   end process;
   DataOut <= Banc(to_integer(Unsigned(Addr)));
 end Behavioral;

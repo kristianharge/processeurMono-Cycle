@@ -14,16 +14,14 @@ END PCreg;
 
 ARCHITECTURE Comportemental of PCreg is
   begin
-    
-    process(clk, rst)
-      begin
-        if rising_edge(clk) then
-          S <= E;
-        end if;
-        if rst = '0' then
+  process(clk, rst)
+  begin
+    if rst = '0' then
             S <= (others => '0');
-        end if;
-      end process;
+		elsif rising_edge(clk) then
+          S <= E;
+    end if;
+  end process;
           
 end Comportemental;
 
